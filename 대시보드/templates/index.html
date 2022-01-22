@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="{{url_for('static',filename='./images/symbol_jpg.jpg')}}" rel="icon" type="image/png">
+  <title>전주시빅데이터 CANWIN</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"rel="stylesheet">
+  <link href="{{url_for('static',filename='./css/styles1.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='./css/custom-responsive-styles1.css')}}"rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='./font/fonta.css')}}"/> 
+  <script src="{{url_for('static',filename='./js/jquery-3.2.1.min.js')}}"></script>
+  <script src="{{url_for('static',filename='./js/all-plugins.js')}}"></script>
+  <script src="{{url_for('static',filename='./js/plugins-activate.js')}}"></script>
+  <style>
+  /*위까지는 외부 css를 따온 코드*/
+  @font-face {
+    font-family: NanumBarunGothic;
+    src: url('.static/font/') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  body{
+    font-family: NanumBarunGothic;
+  }
+  /*위는 웹폰트를 설정하는 코드*/
+  </style>
+  <style>
+    div.left {
+        width: 80%;
+        float: left;
+    }
+    div.right {
+        width: 20%;
+        float: right;
+    }
+    button{ 
+      border: 1px solid skyblue; 
+      background-color: rgba(0,0,0,0); 
+      color: skyblue; padding: 5px; 
+      } 
+    button:hover{ 
+      color:white; 
+      background-color: skyblue; 
+      }
+      #browsers2{
+    background-color: white;
+    border: 1px solid #02ccbb;
+    border-radius: 10px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+
+margin: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-appearance: none;
+-moz-appearance: none;
+
+
+background-image:
+linear-gradient(45deg, transparent 50%, gray 50%),
+linear-gradient(135deg, gray 50%, transparent 50%),
+radial-gradient(#ddd 70%, transparent 72%);
+background-position:
+calc(100% - 20px) calc(1em + 2px),
+calc(100% - 15px) calc(1em + 2px),
+calc(100% - .5em) .5em;
+background-size:
+5px 5px,
+5px 5px,
+1.5em 1.5em;
+background-repeat: no-repeat;
+}
+/*위는 div태그의 공간크기 버튼위에 마우스 올려두었을때 효과 
+browsers2는 드롭다운 메뉴의 스타일 조정 background-image는 첫 화면의 이미지의 크기를 조정한것*/
+</style>
+</head>
+
+<body id="page-top" >
+ 
+   <section class="content-section" style=" position: relative;
+  color: #fff; 
+  background: url('./static/images/aa.png') no-repeat center center; 
+  background-size: 1700px 820px;
+  height:900px; z-index: 9999;" >
+   <!-- 첫시작 위치에 이미지를 띄우는 것  -->
+    <div class="container content-wrap text-center">
+      <p style="font-size: 50px;"></p>
+      <p style="font-size: 20px; text-align: center; font-style: bolid;"></p>
+      <div>
+          <P style="font-size: 30px; position: relative; top: 30px;"></p>
+          <p style="font-size: 20px; position: relative; top:  30px;"></p>
+      </div>
+      <li class="list-inline-item">
+        <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)">
+        </a>
+      </li>
+      
+    </div>
+    <div class="overlay"></div>
+  </section>
+    <!-- 위는 공간을 지정하기위해서 빈공간으로 지정해둔것 -->
+  <section  class="content-section" >
+  <section id="Testimonials" class="content-section"style="background-color: white; ">
+
+
+
+    <div  id="About" class="container" >
+      <div  id="L1" class="row" style="height: 2300px;">
+        <div class="col-sm-12"   >
+          <div class="block-heading">
+            <div style="width:max-content;background-color:#76dbd3
+            ;
+            border:2px solid white;
+            padding:0.5em;
+            line-height: 1em;
+            border-radius:0.5em;
+            position: relative; left: 200px;"><h1 style="color:white;">자전거 사고다발지역정보 데이터 그래프 시각화</h1></div>
+         
+          </div>
+          <iframe src="전라북도주변사고횟수.html" width="1000px" height ="420px" frameborder="0" scrolling="no" style="position: relative; right: 300px; top: 100px;">전라북도 주변 도시 사고횟수</iframe>
+          
+          <h3 style="position: relative; left: 600px; bottom: 250px;">데이터를 통해서 높은 사고횟수를 기록하는 전라북도의</h3><h3 style="position: relative; left: 600px; bottom: 250px;">상위 5개의 도시의 자전거 횟수를 시각화 한 그래프</h3>
+          <h3 style="position: relative; left: 600px; bottom: 200px;">위 그래프를 통해서 전라북도의 자전거 사고중에서</h3><h3 style="position: relative; left: 600px; bottom: 200px;">2번째로 높다는 것을 확인할수 있었습니다.</h3>
+         
+         
+          <iframe src="전라북도사고횟수.html" width="1300px" height ="420px" frameborder="0" scrolling="no" style="position:relative; top: 50px; text-align: center; ">전주시 각구동 사고횟수</iframe>
+          <h3 style="position: relative; top: 100px; left: 35px;">또한 위의 그래프를 통해서 전주시의 각 동별 자전거 사건건수를 파악할수 있었습니다.</h3>
+          <h3 style="position: relative; top: 120px; right: 40px;">시민분들의 자전거도로에 대한 어려움을 알기위해서 빅카인즈 뉴스 워드 클라우드를 진행했습니다.</h3>
+         
+          <img src='./static/images/워드 클라우드.png' width="600" style="position: relative; left: 250px; top: 260px;" >
+
+          <h3 style="position: relative; top: 350px; text-align: center;">최대 뉴스 사이트 빅카인즈에서 ‘전주시 자전거＇로 워드클라우드 만든 결과</h3>
+          <h3 style="position:relative; top:370px; text-align: center;">＇불편’ ‘사고‘ ‘개선＇등 여러 부정적인 단어들이 결과로 나왔고 이를 통해서</h3>
+          <h3 style="position: relative; top: 390px; text-align: center;">전주시 자전거 도로 최적위치 선정을 주제로 GIS 분석을 시작했습니다.</h3>
+      </div>
+    </div>
+  </section>
+  <!-- 이위에는 bokeh로 그린 그래프를 파이썬에서 html으로 출력해서 flask_app.py를 통해서 iframe에 띄울수 있게 설정후에
+  웹상에서 띄움 -->
+</section>
+  <section id="L2" class="content-section" style="background-color: whitesmoke; height: 1800px;">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="block-heading">
+            
+          
+            <div style="width:max-content;background-color:#76dbd3;
+            border:2px solid white;
+            padding:0.5em;
+            line-height: 1em;
+            border-radius:0.5em;
+            position: relative; left: 50px;"><h1 style="color:white;">자전거 도로,관광지,어린이보호구역,학교,위험지역 GIS 시각화</h1></div>
+         
+
+         <iframe src="자전거도로.html" width="800px" height ="420px" frameborder="0" scrolling="no" style="position: relative; right: 500px; top: 100px;">전라북도 주변 도시 사고횟수</iframe>
+         <h2 style="position: relative; top: 150px; right: 490px;">자전거도로 GIS 시각화</h2>
+         <iframe src="마커클러스터.html" width="800px" height ="420px" frameborder="0" scrolling="no" style="position: relative; left: 500px;  bottom: 380px;">전라북도 주변 도시 사고횟수</iframe>
+         <h2 style="position: relative; bottom: 325px; left: 490px;">관광지,어린이보호구역,학교 GIS 시각화</h2>
+         
+
+         <iframe src="열지도.html" width="800px" height ="420px" frameborder="0" scrolling="no" style="position: relative; bottom: 250px; text-align: center;">전라북도 주변 도시 사고횟수</iframe>
+         <h2 style="position: relative; bottom: 210px; text-align: center;">위험지역 열지도 시각화</h2>
+
+
+         <h3>자전거도로의 최적위치를 선정하기위해서 현재의 자전거도로와 </h3>
+           <h3>관광지,어린이보호구역,학교,위험지역 GIS 정보를 시각화하여 분석했습니다.</h3>
+        
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- 위코드는 오른쪽에 조사나간 횟수 왼쪽에 전체업체수를 지도를 띄우고 1등~10등까지의 결과를 화면에 표시하는 것 -->
+
+  
+       
+
+ <section id="L4" class="content-section" style="background-color: white; height: 600px;">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-12">
+        <div style="width:max-content;background-color:#76dbd3;
+        border:2px solid white;
+        padding:0.5em;
+        line-height: 1em;
+        border-radius:0.5em;
+        position: relative; left: 250px;"><h1 style="color:white;">전주시 자전거 도로 최정위치 선정 GIS</h1></div>
+        </div> 
+        
+        <iframe src="최종.html" width="1000px" height ="500px" frameborder="2" framespacing="0"  marginheight="0" marginwidth="0" scrolling="no" style="position: relative; top: 100px; left: 80px;"></iframe>
+        <h3 style="position: relative; top: 200px; left: 130px;">현재 자전거도로의 위치에서 어린이보호구역,관광지,학교와 위험지역을 고려하여</h3>
+        <h3 style="position: relative; top: 230px; left: 230px;">붉은 선으로 자전거도로의 앞으로의 최적위치를 선정하였습니다.</h3>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 여기위의 코드는 드롭다운 선택후 선택 버튼을 룰렀을때 iframe의 src를 계속 변화시키면서 각각 위치한 구로 이동하는 코드 -->
+<section id="About" class="content-section" style="position: relative; top: 600px; height: 500px;" >
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="block-heading">
+          <h2 style="position: relative; bottom: 40px;"> </h2>
+          <footer class="footer text-center" style="background-color: white;">
+            <div class="container">
+              <ul class="list-inline">
+                <div>
+                  <h1>감사합니다.</h1>
+                </div>
+              
+                <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)" style="width: 100px; height: 100px;">
+                    <i class="fa fa-address-card-o fa-2x" aria-hidden="true" style="position: relative; top: 10px;" ></i>
+                    <p style="font-size: 20px; position: relative; top: 10px;">최재혁</p>
+
+                  </a>
+                  </li>
+                  
+                <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)" style="width: 100px; height: 100px;">
+                    <i class="fa fa-address-card-o fa-2x" aria-hidden="true" style="position: relative; top: 10px;" ></i>
+                    <p style="font-size: 20px; position: relative; top: 10px;">박재영</p>
+
+                  </a>
+                  </li>
+                   
+                <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)" style="width: 100px; height: 100px;">
+                    <i class="fa fa-address-card-o fa-2x" aria-hidden="true" style="position: relative; top: 10px;" ></i>
+                    <p style="font-size: 20px; position: relative; top: 10px;">홍성민</p>
+
+                  </a>
+                  </li>
+                      
+                <li class="list-inline-item">
+                  <a class="social-link rounded-circle text-white mr-3" href="javascript:void(0)" style="width: 100px; height: 100px;">
+                    <i class="fa fa-address-card-o fa-2x" aria-hidden="true" style="position: relative; top: 10px;" ></i>
+                    <p style="font-size: 20px; position: relative; top: 10px;">김지원</p>
+
+                  </a>
+                  </li>
+                </ul>
+            </div>
+          </footer>
+    <!-- 이위는 사람들의 이름을 넣은 아이콘 -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+
+</html>
