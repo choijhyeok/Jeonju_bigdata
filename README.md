@@ -74,4 +74,4 @@
   
   :smile: 최종적으로 위의 내용에 부합한 장소를 추가적으로 자전거도로로 추천
   
-  # 대시보드는 https://jeunjusibigdata.herokuapp.com/ 서버를 열어놓았습니다.
+  ### 대시보드는 https://jeunjusibigdata.herokuapp.com/ 서버를 열어놓았습니다.
