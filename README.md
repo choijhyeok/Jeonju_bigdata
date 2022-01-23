@@ -16,7 +16,8 @@
  - 공공데이터포털의 자전거 사고 데이터
  - 공공데이터 전주시 인구수 데이터
  
-   외에 추가로 다양한 전주시 데이터 사용
+https://www.data.go.kr/tcs/dss/selectDataSetList.do?dType=TOTAL&keyword=%EC%A0%84%EC%A3%BC%EC%8B%9C&detailKeyword=&publicDataPk=&recmSe=&detailText=&relatedKeyword=&commaNotInData=&commaAndData=&commaOrData=&must_not=&tabId=&dataSetCoreTf=&coreDataNm=&sort=&relRadio=&orgFullName=&orgFilter=&org=&orgSearch=&currentPage=1&perPage=10&brm=&instt=&svcType=&kwrdArray=&extsn=&coreDataNmArray=&pblonsipScopeCode=
+ : 공공데이터의 
 
 
 
